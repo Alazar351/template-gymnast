@@ -10,7 +10,7 @@ import Icon4 from "../../public/icons/white-support.png";
 
 export default function Features() {
   return (
-    <div className="mt-12 py-12">
+    <section className="mt-12 py-12">
       <div className="flex flex-col items-center justify-center">
         <h4 className="font-oswald text-[clamp(21px,5vw,24px)] font-bold text-[#E31C25]">
           Why Choose Us?
@@ -93,6 +93,6 @@ export default function Features() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

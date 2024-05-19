@@ -5,7 +5,7 @@ import Barbell from "../../public/icons/gym.png";
 
 export default function Banner() {
   return (
-    <div className="mt-12 flex flex-col tablet:flex-row">
+    <section className="mt-12 flex flex-col tablet:flex-row">
       <div className="flex h-[300px] items-center justify-center gap-4 bg-black px-12">
         <Image
           src={Date}
@@ -54,6 +54,6 @@ export default function Banner() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
