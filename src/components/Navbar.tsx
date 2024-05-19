@@ -14,11 +14,11 @@ export default function Navbar() {
   };
 
   return (
-    <div className="tablet:p-4">
+    <div className="left-0 right-0 top-0 z-50 tablet:absolute tablet:p-4">
       <div className="flex h-[90px] items-center justify-between bg-black tablet:bg-transparent">
         <Link
           href="/"
-          className="p-4 font-oswald text-[clamp(36px,3.5vw,56px)] font-bold uppercase text-white tablet:p-0 tablet:text-black"
+          className="p-4 font-oswald text-[clamp(2.25rem,3.5vw,3.5rem)] font-bold uppercase text-white tablet:p-0"
         >
           Gymnast
         </Link>
