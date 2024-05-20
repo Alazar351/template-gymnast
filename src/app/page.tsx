@@ -4,7 +4,7 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import Newsletter from "@/components/Newsletter";
-import Image from "next/image";
+import Schedule from "@/components/Schedule";
 
 export default function Home() {
   return (
@@ -18,6 +18,9 @@ export default function Home() {
         <Features />
       </LayoutWrapper>
       <Newsletter />
+      <LayoutWrapper>
+        <Schedule />
+      </LayoutWrapper>
     </>
   );
 }
