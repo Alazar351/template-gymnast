@@ -32,7 +32,7 @@ export default function Bmi() {
         </div>
       </div>
 
-      <div className="flex h-full flex-col items-center justify-center bg-black">
+      <div className="flex h-full flex-col items-center justify-center bg-black py-12">
         <h1 className="mb-4 font-oswald text-[clamp(21px,5vw,40px)] font-medium text-white">
           Calculate your BMI
         </h1>

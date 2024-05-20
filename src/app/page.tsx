@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import Newsletter from "@/components/Newsletter";
 import Schedule from "@/components/Schedule";
+import Staff from "@/components/Staff";
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
         <Schedule />
       </LayoutWrapper>
       <Bmi />
+      <LayoutWrapper>
+        <Staff />
+      </LayoutWrapper>
     </>
   );
 }
