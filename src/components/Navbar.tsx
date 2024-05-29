@@ -65,7 +65,7 @@ export default function Navbar() {
               />
             )}
             {open && (
-              <div className="absolute left-0 top-0 mt-[90px] min-h-52 w-full">
+              <div className="absolute left-0 top-0 z-50 mt-[90px] min-h-52 w-full">
                 <ul className=" flex  flex-col justify-start bg-black p-6 text-base font-bold text-white">
                   <Link
                     href="/"
