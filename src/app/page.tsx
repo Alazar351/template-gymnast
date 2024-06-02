@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
+import Blog from "@/components/Blog";
 import Bmi from "@/components/Bmi";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
@@ -29,6 +30,9 @@ export default function Home() {
         <Staff />
       </LayoutWrapper>
       <Testimonial />
+      <LayoutWrapper>
+        <Blog />
+      </LayoutWrapper>
     </>
   );
 }

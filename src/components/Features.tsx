@@ -15,7 +15,7 @@ export default function Features() {
         <h4 className="font-oswald text-[clamp(21px,5vw,24px)] font-bold text-[#E31C25]">
           Why Choose Us?
         </h4>
-        <p className="mt-8 font-oswald text-[clamp(37px,5vw,56px)] font-bold text-[#343a40]">
+        <p className="mt-2 font-oswald text-[clamp(37px,5vw,56px)] font-bold text-[#343a40]">
           Benifits of Joining Our GYM
         </p>
       </div>

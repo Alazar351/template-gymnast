@@ -11,7 +11,7 @@ export default function Staff() {
         <h4 className="font-oswald text-[clamp(21px,5vw,24px)] font-bold text-[#E31C25]">
           Our Trainers
         </h4>
-        <p className="mt-8 font-oswald text-[clamp(37px,5vw,56px)] font-bold text-[#343a40]">
+        <p className="mt-2 font-oswald text-[clamp(37px,5vw,56px)] font-bold text-[#343a40]">
           Meet Our Expert Trainers
         </p>
       </div>
