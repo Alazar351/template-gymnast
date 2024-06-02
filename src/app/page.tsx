@@ -7,6 +7,7 @@ import LayoutWrapper from "@/components/LayoutWrapper";
 import Newsletter from "@/components/Newsletter";
 import Schedule from "@/components/Schedule";
 import Staff from "@/components/Staff";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <LayoutWrapper>
         <Staff />
       </LayoutWrapper>
+      <Testimonial />
     </>
   );
 }

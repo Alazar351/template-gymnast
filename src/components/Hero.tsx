@@ -31,7 +31,12 @@ export default function Hero() {
       >
         <CarouselContent className="">
           <CarouselItem className="relative basis-full">
-            <Image src={Img1} alt="First hero image" className="w-full" />
+            <Image
+              src={Img1}
+              priority
+              alt="First hero image"
+              className="w-full"
+            />
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               <div className="flex flex-col items-center justify-center">
                 <p className="text-center font-oswald text-[25px] font-medium capitalize text-[#E31C25] md:text-[26px]">

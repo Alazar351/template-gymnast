@@ -6,8 +6,8 @@ import Img4 from "../../public/assets/team-4.jpg";
 
 export default function Staff() {
   return (
-    <section className="m-12">
-      <div className="flex flex-col items-center justify-center">
+    <section className="my-12 flex flex-col items-center justify-center  ">
+      <div className="flex flex-col  items-center justify-center">
         <h4 className="font-oswald text-[clamp(21px,5vw,24px)] font-bold text-[#E31C25]">
           Our Trainers
         </h4>
@@ -15,8 +15,8 @@ export default function Staff() {
           Meet Our Expert Trainers
         </p>
       </div>
-      <div className="mt-14 grid grid-cols-1 gap-12 md:grid-cols-2 tablet:grid-cols-4">
-        <div className="group tablet:w-[210px] lg:w-[255px]">
+      <div className="mt-14 grid grid-cols-1 gap-y-[30px] md:grid-cols-2 tablet:grid-cols-4">
+        <div className="group px-[15px] ">
           <div className="relative w-full overflow-clip">
             <Image src={Img1} alt="Trainer 1" />
             <Socials />
@@ -28,9 +28,9 @@ export default function Staff() {
             <p className="mt-3 text-white">Trainer</p>
           </div>
         </div>
-        <div className="group tablet:w-[210px] lg:w-[255px]">
+        <div className="group px-[15px] ">
           <div className="relative w-full overflow-clip">
-            <Image src={Img2} alt="Trainer 1" />
+            <Image src={Img2} alt="Trainer 2" />
             <Socials />
           </div>
           <div className="flex flex-col items-center justify-center bg-[#111] py-[20px]">
@@ -40,9 +40,9 @@ export default function Staff() {
             <p className="mt-3 text-white">Trainer</p>
           </div>
         </div>
-        <div className="group tablet:w-[210px] lg:w-[255px]">
+        <div className="group px-[15px] ">
           <div className="relative w-full overflow-clip">
-            <Image src={Img3} alt="Trainer 1" />
+            <Image src={Img3} alt="Trainer 3" />
             <Socials />
           </div>
           <div className="flex flex-col items-center justify-center bg-[#111] py-[20px]">
@@ -52,9 +52,9 @@ export default function Staff() {
             <p className="mt-3 text-white">Trainer</p>
           </div>
         </div>
-        <div className="group tablet:w-[210px] lg:w-[255px]">
+        <div className="group px-[15px] ">
           <div className="relative w-full overflow-clip">
-            <Image src={Img4} alt="Trainer 1" />
+            <Image src={Img4} alt="Trainer 4" />
             <Socials />
           </div>
           <div className="flex flex-col items-center justify-center bg-[#111] py-[20px]">
@@ -112,13 +112,13 @@ function Socials() {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M7.79834 0H16.0483C19.8447 0 22.9233 3.07862 22.9233 6.875V15.125C22.9233 18.9214 19.8447 22 16.0483 22H7.79834C4.00196 22 0.92334 18.9214 0.92334 15.125V6.875C0.92334 3.07862 4.00196 0 7.79834 0ZM16.0483 19.9375C18.7021 19.9375 20.8608 17.7787 20.8608 15.125V6.875C20.8608 4.22125 18.7021 2.0625 16.0483 2.0625H7.79834C5.14459 2.0625 2.98584 4.22125 2.98584 6.875V15.125C2.98584 17.7787 5.14459 19.9375 7.79834 19.9375H16.0483Z"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M6.42334 11C6.42334 7.96263 8.88596 5.5 11.9233 5.5C14.9607 5.5 17.4233 7.96263 17.4233 11C17.4233 14.0374 14.9607 16.5 11.9233 16.5C8.88596 16.5 6.42334 14.0374 6.42334 11ZM8.48584 11C8.48584 12.8948 10.0286 14.4375 11.9233 14.4375C13.8181 14.4375 15.3608 12.8948 15.3608 11C15.3608 9.10388 13.8181 7.5625 11.9233 7.5625C10.0286 7.5625 8.48584 9.10388 8.48584 11Z"
         />
         <circle cx="17.8359" cy="5.08761" r="0.732875" />

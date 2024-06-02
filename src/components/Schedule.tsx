@@ -35,7 +35,7 @@ function DataTable() {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <Button
           onClick={() => setActive("default")}
           className={cn(
@@ -73,237 +73,234 @@ function DataTable() {
           Powerlifting
         </Button>
       </div>
-      <Table className="mt-4">
-        <TableHeader>
-          <TableRow>
-            <TableHead className="w-[174px] border border-white bg-black text-center text-white">
-              Time
-            </TableHead>
-            <TableHead className="border border-white bg-black text-center text-white">
-              Monday
-            </TableHead>
-            <TableHead className="border border-white bg-black text-center text-white">
-              Tuesday
-            </TableHead>
-            <TableHead className="border border-white bg-black text-center text-white">
-              Wednesday
-            </TableHead>
-            <TableHead className="border border-white bg-black text-center text-white">
-              Thursday
-            </TableHead>
-            <TableHead className="border border-white bg-black text-center text-white">
-              Friday
-            </TableHead>
-            <TableHead className="border border-white bg-black text-center text-white">
-              Saturday
-            </TableHead>
-            <TableHead className="border border-white bg-black text-center text-white">
-              Sunday
-            </TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          <TableRow className="hover:bg-transparent">
-            <TableCell className="border border-white bg-black text-white">
-              6.00am - 8.00am
-            </TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Cardio" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Cardio
-              </h5>
-              <p>John Deo</p>
-            </TableCell>
-            <TableCell className="text-center"></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Crossfit" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Crossfit
-              </h5>
-              <p>Adam Philips</p>
-            </TableCell>
-            <TableCell className="text-center"></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Powerlifting" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Power Lifting
-              </h5>
-              <p>James Alien</p>
-            </TableCell>
-            <TableCell className="text-center"></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Cardio" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Cardio
-              </h5>
-              <p>John Deo</p>
-            </TableCell>
-          </TableRow>
-          <TableRow className="hover:bg-transparent">
-            <TableCell className="border border-white bg-black text-white">
-              10.00am - 12.00am
-            </TableCell>
-            <TableCell></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Powerlifting" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Power Lifting
-              </h5>
-              <p>James Alien</p>
-            </TableCell>
-            <TableCell></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Cardio" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Cardio
-              </h5>
-              <p className="">John Deo</p>
-            </TableCell>
-            <TableCell></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Crossfit" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Crossfit
-              </h5>
-              <p className="">Adam Philips</p>
-            </TableCell>
-            <TableCell></TableCell>
-          </TableRow>
-          <TableRow className="hover:bg-transparent">
-            <TableCell className="border border-white bg-black text-white">
-              5.00pm - 7.00pm
-            </TableCell>
-
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Crossfit" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5
-                id="Crossfit"
-                className="mb-2 font-oswald text-[20px] font-medium "
+      <div className="px-[15px]">
+        <Table className="mt-4 ">
+          <TableHeader>
+            <TableRow>
+              <TableHead className="w-[174px] border border-white bg-black text-center text-white">
+                Time
+              </TableHead>
+              <TableHead className="border border-white bg-black text-center text-white">
+                Monday
+              </TableHead>
+              <TableHead className="border border-white bg-black text-center text-white">
+                Tuesday
+              </TableHead>
+              <TableHead className="border border-white bg-black text-center text-white">
+                Wednesday
+              </TableHead>
+              <TableHead className="border border-white bg-black text-center text-white">
+                Thursday
+              </TableHead>
+              <TableHead className="border border-white bg-black text-center text-white">
+                Friday
+              </TableHead>
+              <TableHead className="border border-white bg-black text-center text-white">
+                Saturday
+              </TableHead>
+              <TableHead className="border border-white bg-black text-center text-white">
+                Sunday
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow className="hover:bg-transparent">
+              <TableCell className="border border-white bg-black text-white">
+                6.00am - 8.00am
+              </TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Cardio" && "bg-[#e31c25] text-white",
+                )}
               >
-                Crossfit
-              </h5>
-              <p>Adam Philips</p>
-            </TableCell>
-            <TableCell></TableCell>
-
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Powerlifting" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Power Lifting
-              </h5>
-              <p>James Alien</p>
-            </TableCell>
-            <TableCell></TableCell>
-
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Cardio" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Cardio
-              </h5>
-              <p>John Deo</p>
-            </TableCell>
-            <TableCell></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Crossfit" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Crossfit
-              </h5>
-              <p>Adam Philips</p>
-            </TableCell>
-          </TableRow>
-          <TableRow className="hover:bg-transparent">
-            <TableCell className="border border-white bg-black text-white">
-              7.00pm - 9.00pm
-            </TableCell>
-            <TableCell></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Cardio" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Cardio
-              </h5>
-              <p>John Deo</p>
-            </TableCell>
-
-            <TableCell></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Crossfit" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5
-                id="Crossfit"
-                className="mb-2 font-oswald text-[20px] font-medium "
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Cardio
+                </h5>
+                <p>John Deo</p>
+              </TableCell>
+              <TableCell className="text-center"></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Crossfit" && "bg-[#e31c25] text-white",
+                )}
               >
-                Crossfit
-              </h5>
-              <p>Adam Philips</p>
-            </TableCell>
-
-            <TableCell></TableCell>
-            <TableCell
-              className={cn(
-                "text-center",
-                active === "Powerlifting" && "bg-[#e31c25] text-white",
-              )}
-            >
-              <h5 className="mb-2 font-oswald text-[20px] font-medium ">
-                Power Lifting
-              </h5>
-              <p>James Alien</p>
-            </TableCell>
-            <TableCell></TableCell>
-          </TableRow>
-        </TableBody>
-      </Table>
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Crossfit
+                </h5>
+                <p>Adam Philips</p>
+              </TableCell>
+              <TableCell className="text-center"></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Powerlifting" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Power Lifting
+                </h5>
+                <p>James Alien</p>
+              </TableCell>
+              <TableCell className="text-center"></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Cardio" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Cardio
+                </h5>
+                <p>John Deo</p>
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-transparent">
+              <TableCell className="border border-white bg-black text-white">
+                10.00am - 12.00am
+              </TableCell>
+              <TableCell></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Powerlifting" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Power Lifting
+                </h5>
+                <p>James Alien</p>
+              </TableCell>
+              <TableCell></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Cardio" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Cardio
+                </h5>
+                <p className="">John Deo</p>
+              </TableCell>
+              <TableCell></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Crossfit" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Crossfit
+                </h5>
+                <p className="">Adam Philips</p>
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-transparent">
+              <TableCell className="border border-white bg-black text-white">
+                5.00pm - 7.00pm
+              </TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Crossfit" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5
+                  id="Crossfit"
+                  className="mb-2 font-oswald text-[20px] font-medium "
+                >
+                  Crossfit
+                </h5>
+                <p>Adam Philips</p>
+              </TableCell>
+              <TableCell></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Powerlifting" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Power Lifting
+                </h5>
+                <p>James Alien</p>
+              </TableCell>
+              <TableCell></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Cardio" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Cardio
+                </h5>
+                <p>John Deo</p>
+              </TableCell>
+              <TableCell></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Crossfit" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Crossfit
+                </h5>
+                <p>Adam Philips</p>
+              </TableCell>
+            </TableRow>
+            <TableRow className="hover:bg-transparent">
+              <TableCell className="border border-white bg-black text-white">
+                7.00pm - 9.00pm
+              </TableCell>
+              <TableCell></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Cardio" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Cardio
+                </h5>
+                <p>John Deo</p>
+              </TableCell>
+              <TableCell></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Crossfit" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5
+                  id="Crossfit"
+                  className="mb-2 font-oswald text-[20px] font-medium "
+                >
+                  Crossfit
+                </h5>
+                <p>Adam Philips</p>
+              </TableCell>
+              <TableCell></TableCell>
+              <TableCell
+                className={cn(
+                  "text-center",
+                  active === "Powerlifting" && "bg-[#e31c25] text-white",
+                )}
+              >
+                <h5 className="mb-2 font-oswald text-[20px] font-medium ">
+                  Power Lifting
+                </h5>
+                <p>James Alien</p>
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
     </>
   );
 }

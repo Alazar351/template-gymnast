@@ -1,9 +1,9 @@
 "use client";
 
-import { ChevronDown, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { useMediaQuery } from "usehooks-ts";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -24,11 +24,8 @@ export default function Navbar() {
         </Link>
         {isDesktop ? (
           <div className="h-[88px] w-[682px]">
-            <ul className=" gap flex items-center justify-center bg-[#111] text-base font-bold text-white">
-              <Link
-                href="/"
-                className="px-[23px] py-6 text-[#E31C25] hover:text-[#E31C25]"
-              >
+            <div className=" gap flex items-center justify-center bg-[#111] text-base font-bold text-white">
+              <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
                 Home
               </Link>
               <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
@@ -40,16 +37,13 @@ export default function Navbar() {
               <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
                 Classes
               </Link>
-              <Link
-                href="/"
-                className="flex px-[23px] py-6 hover:text-[#E31C25]"
-              >
+              <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
                 Blog
               </Link>
               <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
                 Contact
               </Link>
-            </ul>
+            </div>
           </div>
         ) : (
           <nav>
@@ -66,7 +60,7 @@ export default function Navbar() {
             )}
             {open && (
               <div className="absolute left-0 top-0 z-50 mt-[90px] min-h-52 w-full">
-                <ul className=" flex  flex-col justify-start bg-black p-6 text-base font-bold text-white">
+                <div className=" flex  flex-col justify-start bg-black p-6 text-base font-bold text-white">
                   <Link
                     href="/"
                     className="px-2 py-[15px] text-[#E31C25] hover:text-[#E31C25]"
@@ -103,7 +97,7 @@ export default function Navbar() {
                   >
                     Contact
                   </Link>
-                </ul>
+                </div>
               </div>
             )}
           </nav>

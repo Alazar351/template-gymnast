@@ -21,8 +21,8 @@ export default function Features() {
       </div>
       <div className="mt-14 grid grid-cols-1 gap-16 md:grid-cols-2">
         <div className="flex flex-col  md:w-[360px] md:flex-row tablet:w-[480px] lg:w-[570px]">
-          <div className="relative p-4 md:my-auto tablet:my-0 tablet:min-w-[210px] lg:min-w-[238px] ">
-            <Image src={Img1} alt="Feature 1" />
+          <div className="relative  p-4 md:my-auto tablet:my-0 tablet:min-w-[210px] lg:min-w-[238px] ">
+            <Image src={Img1} alt="Feature 1" className="w-full" />
             <div className="absolute right-0 top-0 size-[70px] bg-red-600">
               <Image src={Icon1} alt="Icon 1" className="p-4" />
             </div>
