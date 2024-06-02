@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import Img from "../../public/assets/carousel-1.jpg";
-import LayoutWrapper from "./LayoutWrapper";
 
 export default function Bmi() {
   return (
@@ -20,8 +19,8 @@ export default function Bmi() {
         </div>
 
         <div className="inset-x-0  md:absolute">
-          <div className="mx-auto flex items-center justify-center  md:max-w-[720px] tablet:max-w-[960px] lg:max-w-[1140px]">
-            <div className="flex w-full  md:h-[432px] ">
+          <div className="mx-auto flex items-center justify-center md:max-w-[720px] tablet:max-w-[960px] lg:max-w-[1140px]">
+            <div className="flex w-full  md:h-[432px]">
               <div className=" hidden h-full flex-col items-center justify-center px-5 md:flex ">
                 <div className=" md:w-[314px] tablet:w-[434px] lg:w-[524px] ">
                   <h4 className="w-full font-oswald text-[clamp(21px,5vw,24px)] font-light text-[#E31C25]">
