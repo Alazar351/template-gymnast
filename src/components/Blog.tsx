@@ -9,7 +9,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function Blog() {
   return (
-    <section className="my-12 flex flex-col items-center justify-center px-[15px]">
+    <section className="flex flex-col items-center justify-center px-[15px] py-12">
       <div className="flex w-full flex-col items-center justify-center ">
         <h4 className="font-oswald text-[clamp(21px,5vw,24px)] font-bold text-[#E31C25]">
           Our Blog
