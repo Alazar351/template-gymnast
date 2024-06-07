@@ -6,6 +6,7 @@ import Icon2 from "../../public/icons/folder.svg";
 import Icon3 from "../../public/icons/comments.svg";
 import { Button } from "./ui/button";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Blog() {
   return (
@@ -71,15 +72,17 @@ export default function Blog() {
             ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod vero
             dolor sed kasd accusam
           </p>
-          <Button
-            variant="outline"
-            className="mt-6 h-[40px] w-[135px] rounded-none border-2 border-[#E31C25] bg-transparent px-4 py-[6px] text-[16px] text-[#E31C25] hover:bg-[#E31C25] hover:text-white "
-          >
-            Read More
-            <span>
-              <ChevronRight className="size-4 font-extrabold" />
-            </span>
-          </Button>
+          <Link href="/Blog/first-article">
+            <Button
+              variant="outline"
+              className="mt-6 h-[40px] w-[135px] rounded-none border-2 border-[#E31C25] bg-transparent px-4 py-[6px] text-[16px] text-[#E31C25] hover:bg-[#E31C25] hover:text-white "
+            >
+              Read More
+              <span>
+                <ChevronRight className="size-4 font-extrabold" />
+              </span>
+            </Button>
+          </Link>
         </div>
         <div className="">
           <Image
@@ -133,15 +136,17 @@ export default function Blog() {
             ea amet lorem et sea, ipsum sed dolor dolores sed dolore eirmod vero
             dolor sed kasd accusam
           </p>
-          <Button
-            variant="outline"
-            className="mt-6 h-[40px] w-[135px] rounded-none border-2 border-[#E31C25] bg-transparent px-4 py-[6px] text-[16px] text-[#E31C25] hover:bg-[#E31C25] hover:text-white "
-          >
-            Read More
-            <span>
-              <ChevronRight className="size-4 font-extrabold" />
-            </span>
-          </Button>
+          <Link href="/Blog/second-article">
+            <Button
+              variant="outline"
+              className="mt-6 h-[40px] w-[135px] rounded-none border-2 border-[#E31C25] bg-transparent px-4 py-[6px] text-[16px] text-[#E31C25] hover:bg-[#E31C25] hover:text-white "
+            >
+              Read More
+              <span>
+                <ChevronRight className="size-4 font-extrabold" />
+              </span>
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
