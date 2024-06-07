@@ -13,7 +13,7 @@ export default function ContactPage() {
       <div className="my-12 py-12">
         <LayoutWrapper>
           <Intro />
-          <div className="mt-6 flex flex-col border border-green-600 md:flex-row">
+          <div className="mt-6 flex flex-col md:flex-row">
             <Map />
             <ContactForm />
           </div>
