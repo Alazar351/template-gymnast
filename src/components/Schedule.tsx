@@ -40,7 +40,8 @@ function DataTable() {
           onClick={() => setActive("default")}
           className={cn(
             "rounded-none bg-transparent px-4 py-2 text-base text-[#e31c25] hover:bg-transparent hover:text-[#9f141a]",
-            active === "default" && "bg-[#e31c25] text-white",
+            active === "default" &&
+              "bg-[#e31c25] text-white hover:bg-[#e31c25] hover:text-white",
           )}
         >
           All Classes
@@ -49,7 +50,8 @@ function DataTable() {
           onClick={() => setActive("Cardio")}
           className={cn(
             "rounded-none bg-transparent px-4 py-2 text-base text-[#e31c25] hover:bg-transparent hover:text-[#9f141a]",
-            active === "Cardio" && "bg-[#e31c25] text-white",
+            active === "Cardio" &&
+              "bg-[#e31c25] text-white hover:bg-[#e31c25] hover:text-white",
           )}
         >
           Cardio
@@ -58,7 +60,8 @@ function DataTable() {
           onClick={() => setActive("Crossfit")}
           className={cn(
             "rounded-none bg-transparent px-4 py-2 text-base text-[#e31c25] hover:bg-transparent hover:text-[#9f141a]",
-            active === "Crossfit" && "bg-[#e31c25] text-white",
+            active === "Crossfit" &&
+              "bg-[#e31c25] text-white hover:bg-[#e31c25] hover:text-white",
           )}
         >
           Crossfit
@@ -67,7 +70,8 @@ function DataTable() {
           onClick={() => setActive("Powerlifting")}
           className={cn(
             "rounded-none bg-transparent px-4 py-2 text-base text-[#e31c25] hover:bg-transparent hover:text-[#9f141a]",
-            active === "Powerlifting" && "bg-[#e31c25] text-white",
+            active === "Powerlifting" &&
+              "bg-[#e31c25] text-white hover:bg-[#e31c25] hover:text-white",
           )}
         >
           Powerlifting

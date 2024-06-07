@@ -6,7 +6,7 @@ import Img4 from "../../public/assets/team-4.jpg";
 
 export default function Staff() {
   return (
-    <section className="my-12 flex flex-col items-center justify-center  ">
+    <section className="my-12 flex flex-col items-center justify-center py-12  ">
       <div className="flex flex-col  items-center justify-center">
         <h4 className="font-oswald text-[clamp(21px,5vw,24px)] font-bold text-[#E31C25]">
           Our Trainers

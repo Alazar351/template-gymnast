@@ -4,13 +4,21 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { useMediaQuery } from "@/hooks/use-media-query";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 992px");
+  const pathname = usePathname();
 
   const toggle = () => {
     setOpen(!open);
+  };
+
+  const getLinkClass = (path: string) => {
+    return pathname === path
+      ? "text-[#E31C25]"
+      : "text-white hover:text-[#E31C25]";
   };
 
   return (
@@ -25,22 +33,37 @@ export default function Navbar() {
         {isDesktop ? (
           <div className="h-[88px] w-[682px]">
             <div className=" gap flex items-center justify-center bg-[#111] text-base font-bold text-white">
-              <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
+              <Link href="/" className={`px-[23px] py-6 ${getLinkClass("/")}`}>
                 Home
               </Link>
-              <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
+              <Link
+                href="/About"
+                className={`px-[23px] py-6 ${getLinkClass("/About")}`}
+              >
                 About us
               </Link>
-              <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
+              <Link
+                href="/Features"
+                className={`px-[23px] py-6 ${getLinkClass("/Features")}`}
+              >
                 Our Features
               </Link>
-              <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
+              <Link
+                href="/Classes"
+                className={`px-[23px] py-6 ${getLinkClass("/Classes")}`}
+              >
                 Classes
               </Link>
-              <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
+              <Link
+                href="/Blog"
+                className={`px-[23px] py-6 ${getLinkClass("/Blog")}`}
+              >
                 Blog
               </Link>
-              <Link href="/" className="px-[23px] py-6 hover:text-[#E31C25]">
+              <Link
+                href="/Contact"
+                className={`px-[23px] py-6 ${getLinkClass("/Contact")}`}
+              >
                 Contact
               </Link>
             </div>
@@ -63,37 +86,37 @@ export default function Navbar() {
                 <div className=" flex  flex-col justify-start bg-black p-6 text-base font-bold text-white">
                   <Link
                     href="/"
-                    className="px-2 py-[15px] text-[#E31C25] hover:text-[#E31C25]"
+                    className={`px-2 py-[15px] ${getLinkClass("/")}`}
                   >
                     Home
                   </Link>
                   <Link
-                    href="/"
-                    className="px-2 py-[15px] hover:text-[#E31C25]"
+                    href="/About"
+                    className={`px-2 py-[15px] ${getLinkClass("/About")}`}
                   >
                     About us
                   </Link>
                   <Link
-                    href="/"
-                    className="px-2 py-[15px] hover:text-[#E31C25]"
+                    href="/Features"
+                    className={`px-2 py-[15px] ${getLinkClass("/Features")}`}
                   >
                     Our Features
                   </Link>
                   <Link
-                    href="/"
-                    className="px-2 py-[15px] hover:text-[#E31C25]"
+                    href="/Classes"
+                    className={`px-2 py-[15px] ${getLinkClass("/Classes")}`}
                   >
                     Classes
                   </Link>
                   <Link
-                    href="/"
-                    className="flex px-2 py-[15px] hover:text-[#E31C25]"
+                    href="/Blog"
+                    className={`px-2 py-[15px] ${getLinkClass("/Blog")}`}
                   >
                     Blog
                   </Link>
                   <Link
-                    href="/"
-                    className="px-2 py-[15px] hover:text-[#E31C25]"
+                    href="/Contact"
+                    className={`px-2 py-[15px] ${getLinkClass("/Contact")}`}
                   >
                     Contact
                   </Link>

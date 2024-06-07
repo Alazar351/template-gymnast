@@ -7,7 +7,7 @@ import Img from "../../public/assets/carousel-1.jpg";
 
 export default function Bmi() {
   return (
-    <div className="relative w-full">
+    <div className="relative mt-12 w-full">
       <div className="grid grid-cols-1 items-center justify-center md:h-[432px] md:grid-cols-2">
         <div className="relative hidden h-full  md:block">
           <Image

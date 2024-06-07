@@ -8,7 +8,7 @@ export default function Newsletter() {
     <section className="relative mt-12 py-24">
       <Image
         src={Bg}
-        alt="background"
+        alt=""
         aria-hidden="true"
         className="absolute inset-0 -z-10 h-full w-full bg-top object-cover object-top brightness-[.2]"
       />
