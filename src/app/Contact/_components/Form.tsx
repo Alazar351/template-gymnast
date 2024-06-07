@@ -60,7 +60,11 @@ export function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Your Name" {...field} />
+                <Input
+                  placeholder="Your Name"
+                  {...field}
+                  className="focus-visible:border-[#f18e92] focus-visible:shadow-[0px_0px_10px_0px_#F18E92] focus-visible:ring-0"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -72,7 +76,11 @@ export function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Your Email" {...field} />
+                <Input
+                  className="focus-visible:border-[#f18e92] focus-visible:shadow-[0px_0px_10px_0px_#F18E92] focus-visible:ring-0"
+                  placeholder="Your Email"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -84,7 +92,11 @@ export function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Subject" {...field} />
+                <Input
+                  className="focus-visible:border-[#f18e92] focus-visible:shadow-[0px_0px_10px_0px_#F18E92] focus-visible:ring-0"
+                  placeholder="Subject"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -99,7 +111,7 @@ export function ContactForm() {
                 <FormControl>
                   <Textarea
                     placeholder="Enter your message"
-                    className="min-h-36 resize-none "
+                    className="min-h-36 resize-none  focus-visible:shadow-[0px_0px_20px_0px_#F18E92] focus-visible:ring-1 focus-visible:ring-[#f18e92]"
                     {...field}
                   />
                 </FormControl>
