@@ -24,7 +24,7 @@ export default function Testimonial() {
             <h4 className="w-full font-oswald text-[clamp(21px,5vw,24px)] font-light text-[#E31C25]">
               Testimonial
             </h4>
-            <p className=" text-left font-oswald text-[clamp(37px,5vw,56px)] font-bold text-white">
+            <p className=" text-left font-oswald text-[clamp(37px,4vw,56px)] font-bold text-white">
               What Our Clients Say?
             </p>
             <p className="mt-6 text-left text-white ">

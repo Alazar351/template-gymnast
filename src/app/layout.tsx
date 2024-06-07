@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Montserrat, Oswald } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const oswald = Oswald({ subsets: ["latin"], variable: "--oswald" });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${montserrat.className} ${oswald.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

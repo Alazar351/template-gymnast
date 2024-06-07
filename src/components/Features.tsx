@@ -19,9 +19,9 @@ export default function Features() {
           Benifits of Joining Our GYM
         </p>
       </div>
-      <div className="mt-14 grid grid-cols-1 gap-16 md:grid-cols-2">
+      <div className="mt-14 grid grid-cols-1 gap-y-16 md:grid-cols-2 ">
         <div className="flex flex-col  md:w-[360px] md:flex-row tablet:w-[480px] lg:w-[570px]">
-          <div className="relative  p-4 md:my-auto tablet:my-0 tablet:min-w-[210px] lg:min-w-[238px] ">
+          <div className="relative p-4 md:my-auto tablet:my-0 tablet:min-w-[210px] lg:min-w-[238px] ">
             <Image src={Img1} alt="Feature 1" className="w-full" />
             <div className="absolute right-0 top-0 size-[70px] bg-red-600">
               <Image src={Icon1} alt="Icon 1" className="p-4" />
@@ -31,7 +31,7 @@ export default function Features() {
             <h4 className="w-full font-oswald text-[clamp(21px,5vw,24px)] font-bold text-[#343a40]">
               Video Instruction
             </h4>
-            <p className="mt-2 w-full text-[#666]">
+            <p className="mt-2 w-full text-[#666] ">
               Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et
               lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima
               erat tempor
@@ -67,7 +67,7 @@ export default function Features() {
             <h4 className="w-full font-oswald text-[clamp(21px,5vw,24px)] font-bold text-[#343a40]">
               Free Apps & WiFi
             </h4>
-            <p className="mt-2 w-full text-[#666]">
+            <p className="mt-2 w-full  text-[#666]">
               Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et
               lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima
               erat tempor
@@ -85,7 +85,7 @@ export default function Features() {
             <h4 className="w-full font-oswald text-[clamp(21px,5vw,24px)] font-bold text-[#343a40]">
               Community Support
             </h4>
-            <p className="mt-2 w-full text-[#666]">
+            <p className="mt-2 w-full  text-[#666]">
               Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et
               lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima
               erat tempor

@@ -10,7 +10,7 @@ export default function Newsletter() {
         src={Bg}
         alt="background"
         aria-hidden="true"
-        className="absolute inset-0 -z-10 h-full w-full bg-top object-cover brightness-50"
+        className="absolute inset-0 -z-10 h-full w-full bg-top object-cover object-top brightness-[.2]"
       />
       <div className="flex h-full w-full flex-col items-center justify-center ">
         <h4 className="font-oswald text-[clamp(37px,5vw,54px)] font-bold text-white">

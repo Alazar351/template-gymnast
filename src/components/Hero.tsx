@@ -29,14 +29,9 @@ export default function Hero() {
           }),
         ]}
       >
-        <CarouselContent className="">
-          <CarouselItem className="relative basis-full">
-            <Image
-              src={Img1}
-              priority
-              alt="First hero image"
-              className="w-full"
-            />
+        <CarouselContent className="-ml-0">
+          <CarouselItem className="relative basis-full pl-0">
+            <Image src={Img1} priority alt="First hero image" />
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               <div className="flex flex-col items-center justify-center">
                 <p className="text-center font-oswald text-[25px] font-medium capitalize text-[#E31C25] md:text-[26px]">
@@ -54,7 +49,7 @@ export default function Hero() {
               </div>
             </div>
           </CarouselItem>
-          <CarouselItem className="relative -ml-4 basis-full">
+          <CarouselItem className="relative basis-full pl-0">
             <Image src={Img2} alt="Second hero image" className="w-full" />
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               <div className="flex flex-col items-center justify-center">

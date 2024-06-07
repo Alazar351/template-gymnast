@@ -3,7 +3,6 @@ import Banner from "@/components/Banner";
 import Blog from "@/components/Blog";
 import Bmi from "@/components/Bmi";
 import Features from "@/components/Features";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import Newsletter from "@/components/Newsletter";
@@ -34,7 +33,6 @@ export default function Home() {
       <LayoutWrapper>
         <Blog />
       </LayoutWrapper>
-      <Footer />
     </>
   );
 }

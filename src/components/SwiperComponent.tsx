@@ -38,7 +38,7 @@ export default function SwiperComponent() {
         //   @ts-ignore
         style={swiperPaginationStyles}
         spaceBetween={0}
-        speed={1500}
+        speed={750}
         centeredSlides={true}
         autoplay={{
           delay: 4000,

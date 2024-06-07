@@ -16,7 +16,7 @@ export default function Footer() {
       />
       <div className=" mt-12 grid grid-cols-1 items-center justify-center gap-12 px-[15px] py-12 md:grid-cols-2 tablet:grid-cols-4">
         <div className="flex flex-col gap-6">
-          <h4 className="font-oswald text-[22px] font-light text-[#E31C25]">
+          <h4 className="font-oswald text-[22px] text-[#E31C25]">
             Get In Touch
           </h4>
           <div className="flex flex-col gap-4 text-white">
@@ -106,7 +106,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-6">
-          <h4 className="font-oswald text-[22px] font-light text-[#E31C25]">
+          <h4 className="font-oswald text-[22px] text-[#E31C25]">
             Quick Links
           </h4>
           <div className="flex flex-col gap-2">
@@ -133,7 +133,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-6">
-          <h4 className="font-oswald text-[22px] font-light text-[#E31C25]">
+          <h4 className="font-oswald text-[22px] text-[#E31C25]">
             Popular Links
           </h4>
           <div className="flex flex-col gap-2">
@@ -160,7 +160,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-6">
-          <h4 className="font-oswald text-[22px] font-light text-[#E31C25]">
+          <h4 className="font-oswald text-[22px] text-[#E31C25]">
             Opening Hours
           </h4>
           <div className="flex flex-col gap-4 text-white">
